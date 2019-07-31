@@ -1,0 +1,23 @@
+h1 {
+    color: green
+}
+
+label {
+    color: pink
+}
+
+input[type="submit"] {
+    color: brown
+}
+
+p {
+    color: green
+}
+
+span {
+    color: red
+}
+
+a[class="red"] {
+    color: red
+}

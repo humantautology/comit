@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+    </head>
+
+    <body>
+        <h1>Login</h1>
+        <hr>
+        <form action="login.html" method="get" enctype="application/x-www-form-urlencoded" >
+            <div>
+                <label for="userid">Username:</label>
+                <input type="text" name="username" placeholder="Please input a username" size="30" maxlength="12" minlength="7" id="userid" required>
+            </div>
+            <div>
+                <label for="passid">Password:</label>
+                <input type="password" name="pass" placeholder="password" size="30" maxlength="8" id="passid">
+     
+            </div>
+
+            <div>
+                <input type="radio" name="ageverify" value="true" checked>I am 18 years or older
+                <input type="radio" name="ageverify" value="false">No
+            </div>
+
+            <div>
+                <input type="checkbox" name="interests" value="1" checked>Football
+                <input type="checkbox" name="interests" value="2">Basketball
+
+            </div>
+            
+            <div>
+                <input type="submit" value="Login">
+            </div>
+          </form>
+
+
+
+
+    </body>
+</html>

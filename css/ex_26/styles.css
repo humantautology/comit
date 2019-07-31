@@ -1,0 +1,117 @@
+Html, body {
+	Margin: 0px;
+	Padding: 0px;
+	Font-family: Arial, Helvetica, sans-serif;
+	Font-size: 16px;
+}
+
+.container {
+	Width: 960px;
+	Margin: 0 auto;
+	Background-color: #ddd;
+	Border: 1px solid gray;
+}
+
+Header {
+	Padding: 20px;
+Color: #eee;
+}
+
+Header, footer {
+	Background-color: gray;
+}
+
+.side {
+	Float: left;
+	Width: 150px;
+}
+
+.side ul {
+	Margin: 0px;
+	Padding: 0px;
+	List-style: none;
+}
+
+.side ul li a{
+	Display: block;
+	Padding: 10px 0px;
+	Text-align: center;
+	Text-decoration: none;
+	Color: #333;
+	Border-bottom: 1px solid gray border;
+}
+
+.side ul li:hover {
+	Color: #eee;
+	Background-color: gray;
+}
+
+.main {
+	Margin-left: 150px;
+	Background-color: #eee;
+	Padding: 20px;
+}
+
+.main h1 {
+	Margin-top: 0px;
+}
+
+.main p {
+	Margin: 0px;
+	Margin-bottom: 10px;
+}
+
+Footer {
+	Float: none;
+	Color: #eee;
+	Text-align: center;
+	Padding: 10px 0px;
+}
+
+.love {
+	Color: pink;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /* Smaller screen code here */
+  }
+
+
+.container {
+  width: 100%
+}
+
+header {
+  text-align: center;
+}
+
+.side {
+  float: none;
+  width: 100%;
+  text-align: center; 
+}
+
+.side ul li {
+  Display: inline-block;
+  }
+
+.side ul li a {
+  Border-bottom: 0px; 
+  Padding: 10px;
+}
+
+.main {
+  Margin-left: 0;
+}
+
+.main p {
+  Text-align: justify;
+}
+
+  

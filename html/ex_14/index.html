@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create User</title>
+    </head>
+    <body>
+        <h1>Create User</h1>
+        <hr>
+        <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+       <fieldset>
+        <legend>User Form</legend>
+        <div>
+            <label for="usernamebox">Username:</label>
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12" id="usernamebox" required>
+        </div>
+        <br>
+        <div>
+            <label for="passwordbox">Password:</label>
+            <input type="password" name="password" placeholder="password" size="31" maxlength="8" minlength="8" id="passwordbox" required>
+        </div>
+        <br>
+        <div>
+            <label for="superhero">Are you a Superhero fan?</label>
+
+            <input type="radio" name="superhero" value="1" >Superman
+            <input type="radio" name="superhero" value="2" id="superhero" checked>Wonder woman
+            <input type="radio" name="superhero" value="3">Flash
+            <input type="radio" name="superhero" value="4">Thor
+            <input type="radio" name="superhero" value="5">Hulk
+        </div>
+        <br>
+
+        <div>
+            <label for="videogame">Select your favourite video game</label>
+            <input type="checkbox" name="videogame" value="1" checked id="videogame">Fifa
+            <input type="checkbox" name="videogame" value="2">NHL
+            <input type="checkbox" name="videogame" value="3">Resident Evil
+            <input type="checkbox" name="videogame" value="4" checked>Uncharted
+        </div>
+
+        <input type="hidden" name="userid" value="2300">
+        <br>
+        
+        <label for="bday">Birthdate:</label>
+        <input type="date" name="birthday" id="bday" required>
+        
+            <label for="useremail">Email:</label>
+            <input type="email" name="email" id="useremail" required>
+            
+            <label for="">URL:</label>
+            <input type="url" name="url" id="userurl">
+       
+       <hr>
+       <br>
+       	<div>
+        <form action="https://www.google.ca/search" method="get" enctype="application/x-www-form-urlencoded">
+           	<label for="">Search Google:</label>
+            <input type="search" name="q" required>
+            <button>Search</button>
+       	</form>
+       	</div>
+            <br>
+        
+<div>
+        <a href="create_user.html"><input type="image" src="img/register_button.png" width="250"></a>
+        </div>
+    </fieldset>
+
+        </form>
+    </body>
+</html>

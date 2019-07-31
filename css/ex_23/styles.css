@@ -1,0 +1,45 @@
+body {
+	Padding: 0;
+	Margin:0;
+	Font-family: Arial, Helvetica, sans-serif;
+	Color: white;
+}
+
+div {
+	Position: sticky;
+	Top: 0;
+	Height: 100vh;
+	Background-size: cover;
+	Background-position: center center;
+	Border: 1px solid lightblue;
+}
+
+h1 {
+	Text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	Text-align: center;
+}
+
+.one {
+	Background-image: url(img/back1.png);
+}
+
+.two {
+	Background-image: url(img/back2.png);
+}
+
+.three {
+	Background-image: url(img/back3.png);
+}
+
+.four {
+	Background-image: url(img/back4.png);
+}
+
+.five {
+	Background-image: url(img/back5.png);
+}
+
+.six {
+	Background-image: url(img/back6.png);
+}
+
