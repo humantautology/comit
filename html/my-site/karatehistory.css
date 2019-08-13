@@ -1,0 +1,121 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: 1px none;
+	background-image: url(imgs/backgroundimage1.jpeg);
+}
+
+.container {
+	width: 1200px;
+	margin: 0px 100px;
+	border: 1px solid black;
+	border-radius: 10px;
+    background-color: lightgrey;
+}
+
+.title {
+    width: 1200px;
+    height: 90px;
+	border: 1px black;
+	margin: 0px 1px;
+	background-color: lightgrey;
+	padding: 0px;
+	position: fixed;
+	top: 0;
+	left: 100px;
+	right: 0;
+}
+
+.title h1 {
+	font-size: 40px;
+	color: darkred;
+	text-align: center;
+}
+
+.side {
+	float: left;
+	position: fixed;
+	width: 180px;
+	text-align: center;
+	padding-top: 90px;
+	
+}
+
+.side ul {
+	Margin: 0px;
+	Padding: 0px;
+	List-style: none;
+}
+
+
+ .side ul li a {
+	Display: block;
+	Padding: 10px 0px;
+	Text-align: center;
+	Text-decoration: none;
+	Color: darkred;
+    border-bottom: 1px solid gray border;
+ }
+
+ .side ul li a:hover {
+	color: rgb(93, 2, 2);
+	text-shadow: 1px 1px 1px rgb(93, 2, 2);
+	
+ }
+
+ .sectionbody {
+	Margin-left: 180px;
+	Padding-top: 90px;
+	padding-left: 30px;
+	padding-right: 20px;
+	border-left: 1px;	
+	background-color:lightgrey;
+    border: 1px grey;
+    text-align: justify;
+}
+
+.footer{
+	text-align: center;
+	padding: 10px 0;
+	float: none;	
+}
+
+.left {
+    float: left;
+}
+
+section h1 {
+    color: darkred;
+}
+
+.bodylinks {
+    Margin: 0px;
+	Padding: 0px;
+	List-style: none;
+}
+
+.bodylinks li a{
+	Padding: 10px 0px;
+	Text-align: center;
+	text-decoration: wavy;
+    Color: black;
+}
+
+.bodylinks li a:hover {
+	color: rgb(93, 2, 2);
+	text-shadow: 1px 1px 1px rgb(93, 2, 2);
+}
+
+h1 {
+    position: sticky;
+    Top: 0px;
+}
+
+.videocontainer {
+    display: flex;
+    justify-content: center;
+    margin: 1px transparent black;
+    padding: 20px;
+}
+

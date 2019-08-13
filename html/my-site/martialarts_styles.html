@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="description" content="styles of martial arts">
+            <meta name="author" content="oladipo daramola">
+            <meta name="keywords" content="HTML, table, forms, register, avatar">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Martial Arts Styles</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    </head>
+    <body>
+        <header>
+        <h1>Fighting all over the world</h1>
+        </header>
+
+    <section>
+        <p>
+                <span style="color: red;">
+                        Fighting</span> is universal. All over the world, people fight for all sorts of reason. People say prostitution is the oldest profession but a close second is fighting/war. So here is a table of the most popular fighting styles from all over the world.
+        </p>
+
+        <table border="1" cellspacing="0" cellpadding="0">
+            <thead align="center">
+                <tr>
+                    <th></th>
+                    <th colspan="4">STYLE(Country/category)</th>
+                
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td rowspan="6">CONTINENT</td>
+                </tr>
+                <tr>
+                    <td><strong>africa</strong></td>
+                    <td>dambe (nigeria)</td>
+                    <td>Tahtib (egypt)</td>
+                </tr>
+                <tr>
+                    <td><strong>americas</strong></td>
+                    <td>Capoeira (Brazil)</td>
+                    <td>Jeet Kune Do (U.S)</td>
+            
+                </tr>
+                <tr>
+                    <td><strong>asia</strong></td>
+                    <td>Karate (Japan)</td>
+                    <td>Muay Thai (Thailand)</td>
+                </tr>
+                <tr>
+                    <td><strong>europe</strong></td>
+                    <td>Savate (France)</td>
+                    <td>Pankration (Ancient greek hybrid combat sport)</td>
+                </tr>
+                <tr>
+                    <td><strong>oceania</strong></td>
+                    <td>Coreeda (aboriginal)</td>
+                    <td>Kapu kuialua (Hawaiian)</td>
+                </tr>
+            </tbody>
+            <tfoot align="center">
+                <tr>
+                    <td></td>
+                    <td colspan="4" align="center">No place for a peaceful man!</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+    </section>
+
+    <section>
+        <p><h3>Styles by focus</h3></p>
+
+        <table border="1" cellspacing="0" cellpadding="0">
+                <thead align="center">
+                    <tr>
+                        <th></th>
+                        <th colspan="4">STYLE</th>
+                    
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td rowspan="6">FOCUS</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PUNCHING</strong></td>
+                        <td>Boxing</td>
+                        <td>Wing Chun</td>
+                    </tr>
+                    <tr>
+                        <td><strong>KICKING</strong></td>
+                        <td>Taekwondo</td>
+                        <td>Pencak Silat</td>
+                
+                    </tr>
+                    <tr>
+                        <td><strong>THROWING</strong></td>
+                        <td>Judo</td>
+                        <td>wrestling</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JOINT LOCKS/SUBMISSION</strong></td>
+                        <td>Brazilian jiu-jitsu</td>
+                        <td>Jujutsu</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PINNING</strong></td>
+                        <td>Aikido</td>
+                        <td>wrestling</td>
+                    </tr>
+                </tbody>
+                <tfoot align="center">
+                    <tr>
+                        <td></td>
+                        <td colspan="4" align="center">No place for a peaceful man!</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr>
+    </section>
+
+    <section>
+        <h1>The heart of a martial artist</h1>
+            <p>
+                All it takes to be a martial artist is heart, not strength or skill. Anyone can be a martial artist if they simply want to. Ofcourse, training is required to become what the heart sees. <br>Fill out the form below if you would like more information on the martial arts.
+            </p>
+    
+            <form action="martialarts_sumup.html" method="post" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>User Form</legend>
+
+                <label for="">First name:</label>
+                <input type="text" name="firstname" id="fname" pattern="[a-zA-Z]+" required>
+
+                <label for="">Last name:</label>
+                <input type="text" name="lasttname" id="lname" pattern="[a-zA-Z]+" required>
+
+                <label for="">Birthdate:</label>
+                <input type="date" name="birthdate" id="bday">
+
+                <label for="">Email:</label>
+                <input type="email" name="email" id="email" placeholder="example@example.com" required>
+
+                <label for="">Password:</label>
+                <input type="password" name="pass" id="pass" placeholder="Input only numbers" maxlength="8" pattern="[0-9]+" required>
+                <input type="hidden" name="userid" value="2300">
+
+                <br>
+                <br>
+
+                <label for="">Which style are you interested in?:</label>
+                <select name="style" id="martialarts_style" required>
+                    <option value="10" selected>Please select an option</option>
+                    <option value="1">Karate</option>
+                    <option value="2">Boxing</option>
+                    <option value="3">Muay Thai</option>
+                    <option value="4">Kung Fu</option>
+                    <option value="5">Wrestling</option>
+                    <option value="6">MMA</option>
+                    <option value="7">Judo</option>
+                    <option value="8">Jeet Kune Do</option>
+                    <option value="9">Krav Maga</option>
+                </select>
+            
+                <label for="">Who's your favorite martial artist?:</label>
+                <select name="fav_artist" id="martialartist" required>
+                    <option value="10" selected>Please select an option</option>
+                    <option value="Bruce">Bruce lee</option>
+                    <option value="Chan">Jackie Chan</option>
+                    <option value="Li">Jet Li</option>
+                    <option value="Donnie">Donnie Yen</option>
+                    <option value="Tyson">Mike Tyson</option>
+                    <option value="Canizales">Orlando Canizales</option>
+                    <option value="JCVD">Jean Claude Van-Damme</option>   
+                </select>
+                <br>
+                <br>
+
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                    <label for="avatar">Please upload an avatar</label>
+                    <input type="file" name="avatarpic" id="avatar">
+                </form>
+                <br>
+                <a href="martialarts_sumup.html"><input type="image" src="imgs/register_button.png" width="150">
+            </fieldset>
+           </form>
+    </section>
+    <!--
+                            there are so many styles. i just chose the popular styles. 
+                        -->
+
+        <nav>
+           <a href="mykaratestory.html">My Story</a>
+           <a href="historyofkarate.html">History Of Karate</a>
+           <a href="favoritemovies.html">Martial Arts Movies</a>
+           <a href="famousmartialartists.html">Famous Martial Artists</a>
+        </nav>
+        <p>&copy; Copyright Oladipo Daramola</p>
+    </body>
+
+</html>
