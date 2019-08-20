@@ -1,5 +1,6 @@
-let number1 = 10;
-let number2 = 30;
+let number = 2;
 
-console.log('this number is: '); 
-console.log('this number is: ' + number1); 
+do {
+  console.log('number: ', number);
+  number++;
+} while (number <= 100)

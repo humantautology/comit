@@ -87,3 +87,8 @@ img {
     position: sticky;
     Top: 90px;
 }
+
+.two {
+    border: 1px solid black;
+    padding-top: 120px;
+}
