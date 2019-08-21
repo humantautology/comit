@@ -1,6 +1,6 @@
-let number = 2;
+const pets = ['Amelia', 'Ciro', 'Ulises', 'Carlos'];
 
-do {
-  console.log('number: ', number);
-  number++;
-} while (number <= 100)
+pets.forEach(function(pet, index) {
+  console.log('index', index); 
+  console.log(pet);
+});
