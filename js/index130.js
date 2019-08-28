@@ -1,5 +1,5 @@
-let mutants =['Professor X','Cyclops', 'Iceman', 'Angel','Beast', 'Phoenix'];
-let sortedMutants = mutants.sort();
+const mutants =['Professor X','Cyclops', 'Iceman', 'Angel','Beast', 'Phoenix'];
+const sortedMutants = mutants.sort();
 let reversedMutants = mutants.reverse();
 let joinedMutants = mutants.join('*');
 

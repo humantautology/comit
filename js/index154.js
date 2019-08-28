@@ -2,36 +2,32 @@ let player = {
     name: null,
     energy: 100,
     lives: 3,
-    verifyLive: function() {
-        return this.lives > 0 ? true : false;
-      },
-    hasEnergy: function(){
-        return this.hasEnergy > 0 ? true : false;
-      },
-    loseEnergy: function(number){
-        this.energy -= number
-        return `${this.energy}`
+    loseEnergy: function(damage){
+        if(this.energy-damage == 0 || this.energy == damage || this.energy == 0){
+            this.lives--;
+            this.energy = 0
+        } else if 
+            (this.energy > damage){
+                return this.energy - damage
+            }
     },
-    recoverEnergy: function(number){
-        if (this.energy + number <=99){
-        this.energy += number
-        return `${this.energy}`}
+    recoverEnergy: function(energyUp) {
+        if(this.energy + energyUp < 100){
+            this.energy += energyUp
+        }
     },
     loseLife: function(){
-        if(!this.verifyLive()){
-            console.log('Game Over!!')
-        } else {
-        this.lives -= 1
-        return `${this.lives}`}
+        if(this.lives > 0){
+            this.lives--
+        }else {
+            console.log('Game over!!');
+        }    
     },
     recoverLife: function(){
-        if (this.lives +1 <= 99 && this.verifyLive() && this.hasEnergy()){
-        this.lives += 1
-        return `${this.lives}`} else{
-            console.log('game Over !!')
+        if (this.lives < 100){
+            this.lives++
         }
-    }
-}
+}}
 
 
 player.name = "oladipo";
@@ -48,5 +44,5 @@ player.recoverLife();
 player.recoverLife();
 
 console.log(
-  `The player ${player.name} has ${player.energy} energy % and  ${player.lives} lifes`
+  `The player ${player.name} has ${player.energy} energy and  ${player.lives} lifes`
 );
