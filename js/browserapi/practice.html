@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            window.onload =()=>{
+                clickHandler= function () {
+	console.log(this)		// this is the button that we clicked
+  this.style.backgroundColor = 'green';
+}
+
+dblclickHandler = function () {
+	this.style.backgroundColor = 'red';
+}
+
+const button = document.querySelector('button');
+
+button.addEventListener('click', clickHandler);
+
+button.addEventListener('dblclick', dblclickHandler); }
+        </script>
+    </head>
+    <body>
+        <h2>Element without attributes</h2>
+        <button>Click Me!!!</button>
+    </body>
+</html>

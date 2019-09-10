@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Properties</title>
+  <script>
+  window.onload =()=>{
+    const form = document.querySelector('form');
+        //alert(document.forms);
+        const formElements = form.elements;
+        //alert(formElements[2].value);
+        formElements[0].value = 'oladipo';
+        formElements[1].value = 'password1234';
+        
+        let action = form.action;
+      
+        action = 'https://www.google.com';
+        
+        const div = document.querySelector('div')
+        div.innerHTML = `${formElements[0].value}, ${formElements[1].value}, ${action}`;
+      
+       	
+    }
+  </script>
+</head>
+<body>
+  <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <input type="submit" name="submit" value="Send" />
+  </form>
+  <div></div>
+</body>
+</html>

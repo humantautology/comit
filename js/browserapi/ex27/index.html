@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+    window.onload = ()=>{
+    const body = document.querySelector('body'); //selecting body element
+    let numbers = []; // variable for numbers array
+    
+    let index= 0  //iterating numbers in numbers array using while function
+    while(index<100){
+    numbers[index] = index+1
+    index++}
+   
+    const list = document.createElement('ul'); //creating list element
+    body.appendChild(list) //inserting list element into body element
+    
+    numbers.forEach(function(number){
+    const listItem = document.createElement('li');//creating list item element
+    listItem.innerHTML = number; //list item content
+    list.appendChild(listItem);// inserting list item into list
+    });
+
+    
+    }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

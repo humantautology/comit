@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elements</title>
+  <style>
+    .red {
+      color: red;
+    }
+    
+    .green {
+      color: green;
+    }
+    
+    .orange {
+      color: orange;
+    }
+  </style>
+</head>
+<script>
+        window.onload = () => {
+           
+           const list= document.querySelector('ul');
+           const listChildren = list.children;
+           console.log(listChildren);
+
+           const firstListChild = listChildren[0];
+           firstListChild.classList.add('orange');
+
+           const secondListChild = firstListChild.nextElementSibling;
+           secondListChild.classList.add('orange');
+
+           const thirdListChild = secondListChild.nextElementSibling;
+           thirdListChild.classList.add('orange');
+
+           const fourthListChild = thirdListChild.nextElementSibling;
+           fourthListChild.classList.add('orange');
+
+           const fifthListChild = fourthListChild.nextElementSibling;
+           fifthListChild.classList.add('orange');
+
+        const newThird = fifthListChild.previousElementSibling.previousElementSibling;
+        console.log(newThird);
+        newThird.setAttribute('class', 'red');
+
+        newFirst = newThird.previousElementSibling.previousElementSibling;
+        console.log(newFirst);
+        newFirst.setAttribute('class', 'green');
+
+        }
+</script>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+</body>
+</html>

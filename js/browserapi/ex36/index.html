@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+    window.onload = ()=>{
+    const link = document.querySelector('a');
+    const clickHandler = ()=>{
+    event.preventDefault()
+        alert('This link doesn\'t send us to a differen page as we\'re preventing the default behaviour')};
+        
+       link.addEventListener('click', clickHandler);
+       
+     const html = document.querySelector('html');
+     const clickPosition = ()=>{
+     	alert(`Click possition: x-axis: ${event.clientX}, y-axis: ${event.clientY}`);
+        }
+
+     
+     html.addEventListener('click', clickPosition);
+     
+    //html.addEventListener('click', function(event) {
+  //alert(event.clientX);
+  //alert(event.clientY);
+//});
+    }
+    </script>
+  </head>
+  <body>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Google Link with JavaScript handler</a>
+  </body>
+</html>

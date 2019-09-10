@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        
+        let timeInSeconds = window.prompt('enter how long you\'d like to be on the site');
+        let timeInMilliseconds = timeInSeconds*1000
+        console.log(timeInMilliseconds);
+
+        const timer = () => {
+            alert('your session has expired');
+        }
+
+        setTimeout(timer, timeInMilliseconds)
+    
+        </script>
+    </head>
+</html>

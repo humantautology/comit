@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+window.onload= ()=> {
+    const body = document.querySelector('body');
+    const list = document.createElement('ol');
+    body.appendChild(list);
+    
+    const names =[]
+    while(confirm('Do you want to write another name')){
+    
+    writtenName = prompt('write a name');
+    names.push(writtenName)
+    const listItem = document.createElement('li');
+    listItem.innerHTML = writtenName;
+    list.appendChild(listItem);
+    
+    }}
+    console.log(names);
+    </script>
+
+  </head>
+  <body></body>
+</html>

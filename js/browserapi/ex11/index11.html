@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        const userName= window.prompt('Enter your username');
+        const password= window.prompt('Enter your password');
+
+        alert(`welcome ${userName}`);
+        
+        const greet = () => {
+    
+            if(confirm('do you still want to be logged in')){
+                console.log('confirm works')
+                alert(`${userName} your session has been restored`);
+
+            } else {
+                alert(`${userName} your session has ended`);
+            }
+        } 
+
+        setTimeout(greet, 2000);
+        
+        </script>
+    </head>
+</html>

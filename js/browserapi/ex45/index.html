@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Properties</title>
+  <script>
+  window.onload =()=>{
+    const form = document.querySelector('form');
+        //alert(document.forms);
+        const formElements = form.elements;
+        //alert(formElements[2].value);
+        formElements[0].value = 'morty';
+        formElements[1].value = '12345';
+        
+        const button = document.querySelector('button');
+        const buttonEventHandler = function(){
+        event.preventDefault();
+         alert(`${formElements[0].value}, ${formElements[1].value}`)}
+        
+      button.onclick = buttonEventHandler
+       	
+    }
+  </script>
+</head>
+<body>
+  <form action="save_user.html" method="post" enctype="application/x-www-form-urlencoded" name="login">
+    <input type="text" id="username" name="username" />
+    <input type="password" id="pass" name="pass" />
+    <button>Show Username and Password</button>
+  </form>
+  <div></div>
+</body>
+</html>

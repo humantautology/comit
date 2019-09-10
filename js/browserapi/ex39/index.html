@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+    window.onload = ()=>{
+        const firstButton = document.querySelector('#firstButton');
+     	const div = document.querySelector('div')
+        let counter = 0;
+        const dblClickHandler =  function(event){
+        
+        event = counter++;
+        div.innerHTML = counter
+        }
+        
+        firstButton.addEventListener('dblclick', dblClickHandler);
+        }
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>

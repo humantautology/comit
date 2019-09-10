@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+  </head>
+  <script>
+  window.onload = ()=> {
+  const body = document.querySelector('body');
+  let names = ['tunde','yeti', 'paola','funke','dipo','michelle','miguel','yoro','ola','bhumi'];
+
+  const list = document.createElement('ul');
+  body.appendChild(list)
+    let index = 0;
+
+ while (index < 10){
+  
+  const listItem = document.createElement('li');
+    listItem.innerHTML = names[index];
+    list.appendChild(listItem);
+    index++
+  }
+  }
+  </script>
+  <body>
+  </body>
+</html>

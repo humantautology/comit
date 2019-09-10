@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Texts</title>
+  <script>
+      window.onload = function (){
+          const h1 = document.querySelector('h1');
+          const p = document.querySelector('p');
+          const title = h1.innerText;
+          const paragraph = p.innerText;
+          h1.textContent = paragraph;
+          p.textContent = title;
+      }
+  </script>
+</head>
+<body>
+  <h1>Main Title</h1>
+  <p>This is a paragraph</p>
+</body>
+</html>
