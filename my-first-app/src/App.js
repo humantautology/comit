@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Welcome from './Welcome';
+import List from './List';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const students = ['Abdiweli, Ubeydullah', 'Ali, Jwan',
+  'Bansal, Shriya', 'Bhatt, Vruttik', 'Cardenas, Brenda',
+  'Dantes, Danica', 'Daramola, Oladipo', 'Enikanolaye, Samuel',
+  'Gerards, Roel', 'Gu, Shusheng', 'Hoque, Sanyat',
+  'Ibrahim, Maryan', 'Liu, Zhipeng',
+  'Ngayaan, Diana', 'Patel, Foramben',
+  'Raventos, Gloria', 'Singh, Gagandeep', 'Tran, Neil',
+  'Varchuk, Yuriy', 'Elisa Chen', 'Hugo Prado',
+];
+
+const family = ['Xime', 'Simon', 'Ciro', 'Amelia'];
+
+const App = () => {
+  return <div>
+    <Welcome message="Hello my friends" color="green" />
+    <Welcome message="Welcome to React.js <3" color="red" />
+    <List items={students} type="number" />
+    <List items={family} decoration />
+  </div>;
+};
 
 export default App;
